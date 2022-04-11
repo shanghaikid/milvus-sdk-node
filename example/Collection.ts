@@ -1,7 +1,7 @@
 import { MilvusClient } from "../milvus/index";
 import { GENERATE_NAME, IP } from "../const";
 import { genCollectionParams } from "../utils/test";
-const milvusClient = new MilvusClient(IP);
+const milvusClient = new MilvusClient(IP,true);
 const collectionManager = milvusClient.collectionManager;
 const COLLECTION_NAME = GENERATE_NAME();
 
